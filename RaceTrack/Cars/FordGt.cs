@@ -18,5 +18,10 @@ namespace RaceTrack.RaceTrack.Cars
         {
             Console.WriteLine($"The {Name} roars to life!");
         }
+
+        public override void Brake()
+        {
+            Console.WriteLine($"The {Name} at position {Position} flies through the finish line!");
+        }
     }
 }
