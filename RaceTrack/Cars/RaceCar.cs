@@ -7,11 +7,13 @@ namespace RaceTrack.RaceTrack.Cars
         protected RaceCar()
         {
             Position = 0;
+            EngineRunning = false;
         }
 
         public string Name { get; set; }
         public int Position { get; set; }
         public int TopSpeed { get; set; }
+        public bool EngineRunning { get; set; }
 
         public void Accelerate(int driverSkill)
         {
@@ -29,6 +31,8 @@ namespace RaceTrack.RaceTrack.Cars
         }
 
         public abstract void StartEngine();
+
+        public abstract void StopEngine();
         
         public virtual void Brake()
         {

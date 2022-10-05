@@ -27,6 +27,7 @@ namespace RaceTrack.RaceTrack
             Drivers.Add(new Antonio(new FordGt()));
             Drivers.Add(new SoccerMom(new Minivan()));
             Drivers.Add(new CarrollShelby(new FordFocusRs()));
+            Drivers.Add(new Sam(new SubaruOutbackXt()));
         }
 
         public void DriversReady()

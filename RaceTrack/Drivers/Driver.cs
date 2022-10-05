@@ -35,6 +35,7 @@ namespace RaceTrack.RaceTrack.Drivers
         public virtual void StopEngine()
         {
             Console.WriteLine($"{Name} turns off their {Car.Name}'s engine.");
+            Car.StopEngine();
         }
 
         public abstract void Drive();
